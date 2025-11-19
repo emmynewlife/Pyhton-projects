@@ -1,0 +1,27 @@
+# Tuple of student names
+student_names = ("Emmanuel", "Ability", "Kelly", "Divine", "Emmanuel")
+
+# Dictionary storing student records (using student names as keys)
+students = {
+    "John": {"age": 17, "grade": "A"},
+    "Ability": {"age": 16, "grade": "B"},
+    "Kelly": {"age": 18, "grade": "A"},
+    "Divine": {"age": 17, "grade": "C"},
+    "Emmanuel": {"age": 16, "grade": "B"}
+}
+
+# Printing all student names
+print("All student names:", student_names)
+
+# Print the first and last student name
+print("First student name:", student_names[0])
+print("Last student name:", student_names[-1])
+
+print("\n=== Student Records ===")
+print("{:<10} {:<5} {:<5}".format("Name", "Age", "Grade"))
+print("-" * 25)
+
+# Loop through tuple and print student details from dictionary
+for name in student_names:
+    record = students[name]
+    print("{:<10} {:<5} {:<5}".format(name, record["age"], record["grade"]))
